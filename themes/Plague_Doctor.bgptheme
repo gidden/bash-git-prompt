@@ -15,7 +15,7 @@
 
 override_git_prompt_colors() {
   GIT_PROMPT_THEME_NAME="Plague Doctor"
-  GIT_PROMPT_ONLY_IN_REPO=1
+  # GIT_PROMPT_ONLY_IN_REPO=1
   GIT_PROMPT_LEADING_SPACE=0
 
   GIT_PROMPT_PREFIX="[ "
@@ -34,7 +34,7 @@ override_git_prompt_colors() {
 
   GIT_PROMPT_START_USER="${BoldBlue} ${ResetColor}"
   GIT_PROMPT_START_ROOT="${BoldRed}❖ ${ResetColor}"
-  GIT_PROMPT_END_USER="\n_LAST_COMMAND_INDICATOR_${White}${Time12a}${ResetColor} ${BoldGreen}\\u${White}@${BoldYellow}\\h ${Cyan}${PathShort}${ResetColor}${BoldWhite} $ ${ResetColor}"
+  GIT_PROMPT_END_USER=" ${DimGreen}\\u${White}@${DimYellow}\\h\n_LAST_COMMAND_INDICATOR_${White}${Time12a}${ResetColor} ${Cyan}${PathShort}${ResetColor}${BoldWhite} $ ${ResetColor}"
   GIT_PROMPT_END_ROOT="\n_LAST_COMMAND_INDICATOR_${White}${Time12a}${ResetColor} ${BoldRed}\\u${White}@${BoldYellow}\\h ${Cyan}${PathShort}${ResetColor}${BoldRed} # ${ResetColor}"
 }
 
